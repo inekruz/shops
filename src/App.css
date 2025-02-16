@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #00000050;
+  background-color: #2A2B2F;
   font-family: "Roboto", sans-serif;
   overflow: hidden;
 }
@@ -20,10 +20,13 @@ ul {
 a {
   text-decoration: none;
   color: #FFF;
+  user-select: none;
 }
 
+button {
+  user-select: none;
+}
 
-/* Убираем стрелочки у input type number */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -44,6 +47,7 @@ input[type=number] {
   cursor: pointer;
   font-size: 14px;
   transition: color .2s ease;
+  user-select: none;
 }
 
 .toggle_form:hover {
@@ -67,6 +71,7 @@ input[type=number] {
 .enter_acc_container form {
   padding: 20px;
   text-align: center;
+  background-color: #222327;
 }
 .form_title {
   margin-top: 80px;
@@ -114,6 +119,7 @@ input[type=number] {
   color: #FFF;
   transition: background-color .2s ease;
   font-weight: bold;
+  user-select: none;
 }
 .auth_button:hover {
   background-color: #c8730b;
@@ -134,7 +140,7 @@ input[type=number] {
 
 header {
   height: 60px;
-  background-color: #F4F4F4;
+  background-color: #1C1D22;
 }
 
 .header_container {
@@ -170,14 +176,14 @@ header {
   width: 25px;
   height: 25px;
   cursor: pointer;
-  background-color: #00000014;
+  background-color: rgba(177, 177, 177, 0.08);
   padding: 5px;
   border-radius: 7px;
   transition: background-color .2s ease;
   margin: 0 5px;
 }
 .profile_button:hover {
-  background-color: #00000036;
+  background-color: rgba(177, 177, 177, 0.04);
   transition: background-color .2s ease;
 }
 
@@ -188,7 +194,7 @@ header {
   z-index: 1;
   height: 100vh;
   width: 50px;
-  background-color: #1B2728;
+  background-color: #222327;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 50px;
@@ -263,6 +269,7 @@ header {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   font-size: 11px;
+  color: #000;
 }
 .location_popup.active {
   height: 60px;

@@ -11,7 +11,7 @@
 .profile_container {
    width: 1000px;
    height: 700px;
-   background-color: #1B2728;
+   background-color: #222327;
    margin: 20px auto;
    border-radius: 16px;
 }
@@ -31,6 +31,10 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+.profile_settings {
+   color: #000;
 }
 
 .profile_card, .profile_settings {
@@ -363,12 +367,12 @@
 .no_delivery div {
    width: 600px;
    height: 400px;
-   background-color: #fff;
    border-radius: 15px;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   background-color: #24262C;
 }
 .no_delivery div img {
    width: 100px;
@@ -391,6 +395,10 @@
    padding: 5px 15px;
    border-radius: 7px;
    width: 160px;
+}
+
+.profile_card {
+   color: #000;
 }
 
 .profile_card.pre_watch {
