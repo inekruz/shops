@@ -84,6 +84,7 @@ form {
 }
 
 .form_container {
+  color: #FFFFFF;
   display: flex;
   flex-direction: column;
   text-align: left;
