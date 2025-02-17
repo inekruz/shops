@@ -99,6 +99,11 @@ input[type=number] {
   height: 40px;
   border-radius: 7px;
 }
+
+form {
+  border-radius: 15px;
+}
+
 .role_select {
   width: 120px;
   background-color: #FFF;
