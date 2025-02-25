@@ -172,7 +172,7 @@ function Profile() {
                      <p className='profile_name'>{userData ? userData.fullname : 'Загрузка...'}</p>
                      <p className='profile _status'>
                         {userData
-                           ? (userData.role === 1 ? 'Продавец' : userData.role === 0 ? 'Покупатель' : 'Неизвестная роль')
+                           ? (userData.role === 'Продавец' ? 'Продавец' : userData.role === 'Покупатель' ? 'Покупатель' : 'Неизвестная роль')
                            : 'Загрузка...'}
                      </p>
                   </div>
