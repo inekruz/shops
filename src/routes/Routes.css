@@ -39,7 +39,6 @@
 
 .profile_card, .profile_settings {
    background-color: #fff;
-   color: #000;
    border-radius: 16px;
    display: flex;
    flex-direction: column;
@@ -201,6 +200,9 @@
    margin: 40px 0 0;
 }
 
+legend {
+      color: #000;
+}
 
 /* =========================== */
 
