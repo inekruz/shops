@@ -74,7 +74,7 @@ function App() {
   if (!token) {
     return <Auth setToken={setToken} setUsername={setUsername} setRole={setRole} />;
   } else {
-    const roleText = role === true ? "Продавец" : role === false ? "Покупатель" : "Неизвестно"
+    const roleText == role === true ? "Продавец" : role === false ? "Покупатель" : "Неизвестно"
     console.log("Получен роль: ", roleText);
     return (
       <div className="App">
