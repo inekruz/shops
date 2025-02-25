@@ -37,8 +37,6 @@ function App() {
     setRole(null);
   };
 
-  const roleText = role === true ? 'Продавец' : role === false ? 'Покупатель' : '';
-
   useEffect(() => {
     const fetchAddress = async () => {
       if (username) {
@@ -76,7 +74,7 @@ function App() {
   if (!token) {
     return <Auth setToken={setToken} setUsername={setUsername} setRole={setRole} />;
   } else {
-    console.log("Получен роль: ", roleText);
+    console.log("Получен роль: ", role);
     return (
       <div className="App">
         <header>
@@ -135,7 +133,7 @@ function App() {
               </li>
             </Link>
 
-            {roleText === 'Продавец' && (
+            {role === 'Продавец' && (
               <Link to='/control' className={`nav_menu_list_item ${location.pathname === '/control' ? 'active' : ''}`}>
                 <li className='nav_menu_list_item_container'>
                   <div className='menu_icon_container'>
