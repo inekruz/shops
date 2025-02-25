@@ -74,7 +74,8 @@ function App() {
   if (!token) {
     return <Auth setToken={setToken} setUsername={setUsername} setRole={setRole} />;
   } else {
-    console.log("Получен роль: ", role);
+    const roleText = role === true ? "Продавец" : role === false ? "Покупатель" : "Неизвестно"
+    console.log("Получен роль: ", roleText);
     return (
       <div className="App">
         <header>
@@ -133,7 +134,7 @@ function App() {
               </li>
             </Link>
 
-            {role === 'Продавец' && (
+            {roleText === 'Продавец' && (
               <Link to='/control' className={`nav_menu_list_item ${location.pathname === '/control' ? 'active' : ''}`}>
                 <li className='nav_menu_list_item_container'>
                   <div className='menu_icon_container'>
