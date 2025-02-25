@@ -155,8 +155,9 @@ function Profile() {
       getFavCount();
       getDeliveryCount();
    }, [username, getFavCount, getDeliveryCount]);
+      console.log("role:", userData?.role);
 const roleText = userData?.role === 'true' ? "Продавец" : userData?.role === 'false' ? "Покупатель" : "Неизвестно";
-   console.log("roles:", roleText);
+   console.log("roleText:", roleText);
    return (
       <div className='route'>
          <h2 className='route_title'>Профиль</h2>
