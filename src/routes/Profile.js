@@ -171,14 +171,7 @@ function Profile() {
                   <div className='about'>
                      <p className='profile_name'>{userData ? userData.fullname : 'Загрузка...'}</p>
                      <p className='profile _status'>
-                     {userData
-                         ? (userData.role === 'Продавец' 
-                             ? 'Продавец' 
-                             : userData.role === 'Покупатель' 
-                                 ? 'Покупатель' 
-                                 : 'Неизвестная роль')
-                         : 'Загрузка...'}
-
+                              {userData ? (userData.role || "неизвестно") : "загрузка"}
                      </p>
                   </div>
 
@@ -231,14 +224,7 @@ function Profile() {
                         <div className='profile_settings_column_param'>
                            <p>Роль</p>
                            <span>
-{userData
-    ? (userData.role === 'Продавец' 
-        ? 'Продавец' 
-        : userData.role === 'Покупатель' 
-            ? 'Покупатель' 
-            : 'Неизвестная роль')
-    : 'Загрузка...'}
-
+                              {userData ? (userData.role || "неизвестно") : "загрузка"}
                            </span>
                         </div>
                      </div>
