@@ -85,6 +85,7 @@ function Auth({ setToken }) {
           localStorage.setItem('token', data.token);
           localStorage.setItem('username', formData.username);
           localStorage.setItem('role', data.role);
+           console.log("role:", data.role);
           setSuccessMessage('Вход выполнен успешно!');
           setShowSuccess(true);
           setFormData({
@@ -133,6 +134,7 @@ function Auth({ setToken }) {
           localStorage.setItem('token', data.token);
           localStorage.setItem('username', formData.username);
           localStorage.setItem('role', formData.role);
+           console.log("role:", data.role);
           setSuccessMessage('Регистрация прошла успешно!');
           setShowSuccess(true);
           setFormData({
