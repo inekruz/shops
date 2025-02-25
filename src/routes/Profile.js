@@ -155,7 +155,7 @@ function Profile() {
       getFavCount();
       getDeliveryCount();
    }, [username, getFavCount, getDeliveryCount]);
-
+const roleText = userData.role === true ? "Продавец" : userData.role === false ? "Покупатель" : "Неизвестно"
    return (
       <div className='route'>
          <h2 className='route_title'>Профиль</h2>
@@ -171,7 +171,7 @@ function Profile() {
                   <div className='about'>
                      <p className='profile_name'>{userData ? userData.fullname : 'Загрузка...'}</p>
                      <p className='profile _status'>
-                              {userData ? (userData.role || "неизвестно") : "загрузка"}
+                              {roleText}
                      </p>
                   </div>
 
@@ -224,7 +224,7 @@ function Profile() {
                         <div className='profile_settings_column_param'>
                            <p>Роль</p>
                            <span>
-                              {userData ? (userData.role || "неизвестно") : "загрузка"}
+                        {roleText}
                            </span>
                         </div>
                      </div>
