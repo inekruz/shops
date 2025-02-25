@@ -37,7 +37,7 @@ function App() {
     setRole(null);
   };
 
-  const roleText = role === '1' ? 'Продавец' : role === '0' ? 'Покупатель' : '';
+  const roleText = role == true ? 'Продавец' : role == false ? 'Покупатель' : '';
 
   useEffect(() => {
     const fetchAddress = async () => {
