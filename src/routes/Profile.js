@@ -227,7 +227,7 @@ function Profile() {
                            <p>Роль</p>
                            <span>
                               {userData
-                                 ? (userData.role === 1 ? 'Продавец' : userData.role === 0 ? 'Покупатель' : 'Неизвестная роль')
+                                 ? (userData.role === 'Продавец' ? 'Продавец' : userData.role === 'Покупатель' ? 'Покупатель' : 'Неизвестная роль')
                                  : 'Загрузка...'}
                            </span>
                         </div>
