@@ -156,7 +156,7 @@ function Profile() {
       getDeliveryCount();
    }, [username, getFavCount, getDeliveryCount]);
       console.log("role:", userData?.role);
-const roleText = userData?.role === 'true' ? "Продавец" : userData?.role === 'false' ? "Покупатель" : "Неизвестно";
+const roleText = userData?.role === true ? "Продавец" : userData?.role === false ? "Покупатель" : "Неизвестно";
    console.log("roleText:", roleText);
    return (
       <div className='route'>
