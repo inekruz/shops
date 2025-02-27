@@ -9,6 +9,7 @@ import Profile from './routes/Profile';
 import Favorite from './routes/Favorite';
 import Delivery from './routes/Delivery';
 import Control from './routes/Control';
+import Bonus from './routes/Bonus';
 
 import ProfileIcon from './icons/profile.svg';
 import BasketIcon from './icons/basket.svg';
@@ -135,6 +136,17 @@ const roleText = role === 'true' ? "Продавец" : role === 'false' ? "По
               </li>
             </Link>
 
+            {roleText === 'Покупатель' && (
+              <Link to='/bonus' className={`nav_menu_list_item ${location.pathname === '/bonus' ? 'active' : ''}`}>
+                <li className='nav_menu_list_item_container'>
+                  <div className='menu_icon_container'>
+                    <img alt='Иконка меню' src={MenuAdd} className='menu_icon' />
+                  </div>
+                  <p>Бонусы</p>
+                </li>
+              </Link>
+            )}
+
             {roleText === 'Продавец' && (
               <Link to='/control' className={`nav_menu_list_item ${location.pathname === '/control' ? 'active' : ''}`}>
                 <li className='nav_menu_list_item_container'>
@@ -163,6 +175,7 @@ const roleText = role === 'true' ? "Продавец" : role === 'false' ? "По
             <Route path='/favorite' element={<Favorite />} />
             <Route path='/delivery' element={<Delivery />} />
             <Route path='/control' element={<Control username={username} />} />
+            <Route path='/bonus' element={<Bonus username={username} />} />
           </Routes>
         </div>
       </div>
