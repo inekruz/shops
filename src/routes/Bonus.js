@@ -24,7 +24,7 @@ function Bonus() {
                 const data = await response.json();
                 setBonuses(data);
 
-                console.log('Bonuses: ', bonuses);
+                console.log('Bonuses: ', data.bonuses);
             } catch (error) {
                 console.error('Error fetching user data: ', error);
             }
