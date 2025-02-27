@@ -9,7 +9,7 @@ function Bonus() {
     useEffect(() => {
         const fetchUserBonuses = async () => {
             try {
-                const response = await fetch('/https://api.glimshop.ru/getBonus', {
+                const response = await fetch('https://api.glimshop.ru/getBonus', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
