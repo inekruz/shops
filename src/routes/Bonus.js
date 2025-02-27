@@ -24,7 +24,7 @@ function Bonus() {
                 const data = await response.json();
                 setBonuses(data);
 
-                console.log('Bonuses: ', data.bonuses);
+                console.log('Bonuses: ', bonuses);
             } catch (error) {
                 console.error('Error fetching user data: ', error);
             }
@@ -32,6 +32,33 @@ function Bonus() {
 
         fetchUserBonuses();
     }, [username]);
+
+    return (
+        <div className='route'>
+            <h2 className='route_title'>Бонусы</h2>
+
+            <ul className='main_products_list'>
+                {bonuses.map((bonus, index) => (
+                    <li key={index} className='delivery_list_item'>
+                        <div className='fav_list_item_container'>
+                            <div className='fav_list_item_desc'>
+                            <div>
+                                <p className='fav_product_name white'>{bonus.title}</p>
+                                <p className='product_category orng'>{bonus.description}</p>
+                            </div>
+                            <p className='price white'>{bonus.date_end} ₽</p>
+                            </div>
+                            <div className='white'>
+                            <p className='status_display'>{bonus.bonus_price}</p>
+                            </div>
+                        </div>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 }
+
+//title, description, date_end, bonus_price
 
 export default Bonus;
