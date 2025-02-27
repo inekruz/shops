@@ -1,8 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import './Routes.css';
-import Notification from '../components/Notification';
-import DefaultProfileImage from '../icons/photo.svg';
-import CrossImage from '../icons/cross.svg';
+
 
 function Bonus() {
     const [bonuses, setBonuses] = useState([]);
