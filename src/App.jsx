@@ -136,7 +136,7 @@ const roleText = role === 'true' ? "Продавец" : role === 'false' ? "По
               </li>
             </Link>
 
-            {roleText === 'Покупатель' && (
+            {roleText === 'Продавец' && (
               <Link to='/bonus' className={`nav_menu_list_item ${location.pathname === '/bonus' ? 'active' : ''}`}>
                 <li className='nav_menu_list_item_container'>
                   <div className='menu_icon_container'>
