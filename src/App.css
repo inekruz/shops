@@ -76,7 +76,9 @@ form {
   padding: 20px;
   text-align: center;
   background-color: #222327;
+  color: #fff;
 }
+
 .form_title {
   margin-top: 80px;
   color: #F2890C;

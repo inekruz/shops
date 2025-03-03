@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Routes.css';
-import Example from '../images/primer.png';
 import Notification from '../components/Notification';
+
+import Slider from '../components/Slider'
+
+import Example from '../images/primer.png';
 
 function Main({ searchQuery }) {
    const [products, setProducts] = useState([]);
@@ -128,6 +131,8 @@ function Main({ searchQuery }) {
             <p className='main_header_item' onClick={() => sortProducts('price')}>Цене</p>
             <p className='main_header_item' onClick={() => sortProducts('category')}>Категории</p>
          </div>
+
+         <Slider />
 
          <ul className='main_products_list'>
             {filteredProducts.map(product => (
