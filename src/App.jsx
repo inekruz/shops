@@ -21,8 +21,7 @@ import MenuAdd from './icons/menu_add.svg';
 import ExitIcon from './icons/exit.svg';
 
 function App() {
-  // const [token, setToken] = useState(localStorage.getItem('token'));
-  const [token, setToken] = useState(true);
+  const [token, setToken] = useState(localStorage.getItem('token'));
   const [username, setUsername] = useState(localStorage.getItem('username'));
   const [role, setRole] = useState(localStorage.getItem('role'));
   const location = useLocation();
